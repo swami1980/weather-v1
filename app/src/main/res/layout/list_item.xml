@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/head1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:gravity="center"
+        tools:text="Princeton"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:id="@+id/LinList"
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+
+            >
+    <TextView
+        android:id="@+id/mag1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+
+        android:gravity="center_vertical"
+        android:background="@drawable/magnitude_circle"
+        tools:text="5"/>
+
+            <TextView
+                android:id="@+id/feelslike"
+                style = "@style/FontStyle"
+                tools:text="101F" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/Img1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+
+            />
+        <TextView
+            android:id="@+id/conditions"
+            style = "@style/FontStyle"
+            tools:text="101F" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        >
+
+
+        <TextView
+            android:id="@+id/date1"
+            style = "@style/FontStyle"
+            tools:text="2/2/2017"
+            />
+        <TextView
+            android:id="@+id/time1"
+            style = "@style/FontStyle"
+            tools:text="10:10pm" />
+    </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+       >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        >
+    <TextView
+        android:id="@+id/elevationDisp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/elevation"
+        android:layout_weight="1"
+        android:layout_gravity="left"
+        />
+
+        <TextView
+            android:id="@+id/elevationVal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+                        tools:text="20ft"
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        >
+        <TextView
+            android:id="@+id/latitudeDisp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            android:text="@string/latitude"
+                       />
+
+        <TextView
+            android:id="@+id/latitudeVal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:layout_toRightOf="@id/latitudeDisp"
+            android:layout_below="@id/elevationVal"
+            android:layout_weight="1"
+            android:layout_gravity="left"
+            tools:text="20ft"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            >
+        <TextView
+            android:id="@+id/longitudeDisp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/longitude"
+            android:layout_below="@id/latitudeDisp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/longitudeVal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:layout_toRightOf="@id/longitudeDisp"
+            android:layout_below="@id/latitudeVal"
+            android:layout_weight="1"
+            tools:text="20ft"
+            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+
+            >
+        <TextView
+            android:id="@+id/relativehumidityDisp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/relative_humidity"
+            android:layout_below="@id/longitudeDisp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/relativehumidityVal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:layout_toRightOf="@id/relativehumidityDisp"
+            android:layout_below="@id/longitudeVal"
+            android:layout_weight="1"
+            tools:text="20ft"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+
+            >
+        <TextView
+            android:id="@+id/pressureDisp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/pressure"
+            android:layout_below="@id/relativehumidityDisp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/pressureVal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:layout_toRightOf="@id/pressureDisp"
+            android:layout_below="@id/relativehumidityVal"
+            android:layout_weight="1"
+            tools:text="20ft"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        >
+        <TextView
+            android:id="@+id/precipDisp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/precip_today_in"
+            android:layout_below="@id/pressureDisp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/precipVal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:layout_toRightOf="@id/precipDisp"
+            android:layout_below="@id/pressureVal"
+            android:layout_weight="1"
+            tools:text="20ft"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
